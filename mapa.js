@@ -13,4 +13,20 @@ window.onload = () => {
       return response.json();
     })
     .then(data => {
+
       console.log("Datos obtenidos:", data);
+      
+      const country = data.country;
+      const city = data.city;
+      const state = data.state;
+      const location = data.location;
+
+     infoUbicacion.innerHTML = `
+        <li class="list-group-item bg-primary text-white"><strong>País:</strong> ${country?.name || "N/A"}</li>
+        <li class="list-group-item bg-success text-white"><strong>Ciudad:</strong> ${city?.name || "N/A"}</li>
+        <li class="list-group-item bg-warning"><strong>Región:</strong> ${state?.name || "N/A"}</li>
+        <li class="list-group-item bg-info text-white"><strong>Latitud:</strong> ${location?.latitude}</li>
+        <li class="list-group-item bg-secondary text-white"><strong>Longitud:</strong> ${location?.longitude}</li>
+      `; 
+
+    })
