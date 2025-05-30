@@ -16,17 +16,32 @@ window.onload = () => {
 
       console.log("Datos obtenidos:", data);
       
-      const country = data.country;
-      const city = data.city;
-      const state = data.state;
-      const location = data.location;
+      const pais = data.country;
+      const ciudad = data.city;
+      const region = data.state;
+      const locacion = data.location;
 
      infoUbicacion.innerHTML = `
-        <li class="list-group-item bg-primary text-white"><strong>País:</strong> ${country?.name || "N/A"}</li>
-        <li class="list-group-item bg-success text-white"><strong>Ciudad:</strong> ${city?.name || "N/A"}</li>
-        <li class="list-group-item bg-warning"><strong>Región:</strong> ${state?.name || "N/A"}</li>
-        <li class="list-group-item bg-info text-white"><strong>Latitud:</strong> ${location?.latitude}</li>
-        <li class="list-group-item bg-secondary text-white"><strong>Longitud:</strong> ${location?.longitude}</li>
+        <li class="list-group-item text-white bg-rojo"><strong>País:</strong> ${pais?.name || "N/A"}</li>
+        <li class="list-group-item  text-white bg-verde"><strong>Ciudad:</strong> ${ciudad?.name || "N/A"}</li>
+        <li class="list-group-item text-white bg-amarillo"><strong>Región:</strong> ${region?.name || "N/A"}</li>
+        <li class="list-group-item  text-white bg-azul-claro"><strong>Latitud:</strong> ${locacion?.latitude}</li>
+        <li class="list-group-item  text-white bg-gris "><strong>Longitud:</strong> ${locacion?.longitude}</li>
       `; 
 
+      const mapa = L.map(mapaContenedor).setView([locacion.latitude, locacion.longitude], 13);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(mapa);
+
+      L.marker([locacion.latitude, locacion.longitude])
+        .addTo(mapa)
+        .bindPopup("Ubicación aproximada")
+        .openPopup();
     })
+    .catch(error => {
+      console.error("Error al obtener la ubicación:", error);
+      infoUbicacion.innerHTML = `<li class="list-group-item text-danger">No se pudo obtener la ubicación</li>`;
+    });
+};
