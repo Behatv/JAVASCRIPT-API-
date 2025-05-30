@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> INICIO </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+<body  class="body" background="imagenes/fondo celeste.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row"> 
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <a class="navbar-brand" href="#"><img src="imagenes/logo-removebg-preview.png" alt="Logo"></a>
+    
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- menu de navegación -->
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="inicio.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">LOGIN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="nosotros.html">NOSOTROS</a>
+                                </li>
+                            </ul>
+    
+                            <!-- buscador  -->
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                                <button class="btn btn-outline-success configuracion_boton boton_click_js" type="submit" 
+                                    style="--bs-btn-color: #003366; --bs-btn-border-color: #003366; --bs-btn-hover-color: #fff; --bs-btn-hover-bg: #003366; --bs-btn-hover-border-color: #003366; --bs-btn-focus-shadow-rgb: 0, 51, 102; --bs-btn-active-color: #fff; --bs-btn-active-bg: #003366; --bs-btn-active-border-color: #003366; --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); --bs-btn-disabled-color: #003366; --bs-btn-disabled-bg: transparent; --bs-btn-disabled-border-color: #003366; --bs-gradient: none;">
+                                    Buscar
+                                </button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal LOGIN -->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">INICIAR SESIÓN</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+  
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Correo Electronico</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Contraseña</label>
+                            </div>
+    
+                            <div class="form-check text-start my-3">
+                                <input class="form-check-input" type="checkbox" value="remember-me" id="checkDefault">
+                                <label class="form-check-label" for="checkDefault">
+                                    Recordar
+                                </label>
+                            </div>
+                            <button class="btn btn-primary w-100 py-2" type="submit">Iniciar Sesion</button>
+                        </form>
+                    </div>
+                    
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container-lg">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner ">
+                  <div class="carousel-item active resaltar_elemento_js">
+                    <img src="imagenes/carrusel_paisaje1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item resaltar_elemento_js">
+                    <img src="imagenes/carrusel_paisaje2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item resaltar_elemento_js">
+                    <img src="imagenes/carrusel_paisaje3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+        </div>
+    
+        <br>    <br>    <br>
+    
+        <div class="container-fluid card_de_abajo d-flex gap-3">
+            <div class="card" style="width: 20rem;">
+                <div class="imagen_card">
+                    <img src="imagenes/paisaje.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">🧭 Tu viaje comienza con un solo paso</h5>
+                  <p class="card-text">Explora nuestro sitio, conoce los destinos que tenemos para ti y encuentra la inspiración para tu próxima aventura. Desde el primer contacto hasta tu regreso a casa, estaremos contigo en cada etapa. Con nosotros, viajar es fácil, seguro y emocionante. ✈️🌍</p>
+                  <a href="contacto.html" class="btn btn-primary mi_boton2"> ¡Viaja ya!</a>
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+                <div class="imagen_card">
+                    <img src="imagenes/paisaje2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">✈️ ¿Qué ofrecemos?</h5>
+                  <p class="card-text">En nuestra agencia de viajes te ofrecemos todo lo que necesitas para vivir una experiencia completa: paquetes turísticos personalizados, reservas de vuelos y hospedaje, traslados, seguros de viaje y asesoría especializada. Nos encargamos de cada detalle para que tú solo te dediques a disfrutar. 🌎✨</p>
+                  <a href="contacto.html" class="btn btn-primary mi_boton2 ">¡Viaja ya!</a>
+                </div>
+            </div>
+        </div>
+    
+    <br> <br> <br> 
+        <div class="container-fluid">
+            <div class="row"> 
+                <div class="col">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            ✈️ OTAKAR AGENCY ✈️
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">✈️ Bienvenido a tu próximo viaje</h5>
+                          <p class="card-text">🌍 ¡Bienvenido a Otakar Agency!
+                            En Otakar Agency, nos apasiona ayudarte a descubrir el mundo. Somos una agencia de viajes dedicada a brindarte experiencias únicas, adaptadas a tus gustos, necesidades y presupuesto. Ya sea que sueñes con playas paradisíacas, ciudades llenas de historia o escapadas de aventura, aquí encontrarás el destino ideal.</p>
+                          <button type="button" class="btn btn-secondary mi-boton boton_dobleclick_js ">Contáctanos ahora</button>
+                          <div class="mensaje_dobleclick"> </div>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                            Más de 5 años ayudando a personas a cumplir sus sueños de viajar.
+                        </div>
+                      </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+            
+
+        <div class="container-xxl">
+            <div class="iamgen_desaparece">
+                <div class="row">                 
+                    <div class="col imagen_desaparece_js">
+                        <img src="imagenes/carrusel_paisaje1.jpg" alt="YA NO HAY IMAGEN 😮"></a>
+
+                    </div>
+                </div>
+            </div> 
+        </div>  
+
+    </main>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="barra_redes_nueva">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h1> ✈🌍 INFORMACION   </h1>
+                        <ul class="list-group list-group-flush"> <!-- grupo de listas--> 
+                            <li class="list-group-item"><a href="https://www.facebook.com" target="_blank">SOBRE NOSOTROS</a></li>
+                            <li class="list-group-item"><a href="https://www.whatsapp.com/" target="_blank">PREGUNTAS FRECUENTES (FAQ)</a></li>
+                            <li class="list-group-item"><a href="https://www.instagram.com" target="_blank">TESTIMONIOS</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <h1> ✈🌍 SERVICIOS  </h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="https://www.facebook.com" target="_blank">DESTINOS</a></li>
+                            <li class="list-group-item"><a href="https://www.whatsapp.com/" target="_blank">PAQUETES Y OFERTAS</a></li>
+                            <li class="list-group-item"><a href="https://www.instagram.com" target="_blank">RESERVAS</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-2">
+                        <div class="logo_redes1">
+                            <ul >
+                                <li ><a href="https://www.facebook.com" target="_blank"><img src="imagenes/logo_facebook-removebg-preview.png" alt="Facebook"></a></li>
+                                <li ><a href="https://www.whatsapp.com" target="_blank"><img src="imagenes/logoWSP-removebg-preview.png" alt="WhatsApp"></a></li>
+                                <li ><a href="https://www.instagram.com" target="_blank"><img src="imagenes/insta_logo-removebg-preview.png" alt="Instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="nombre_empresa_abajo">
+                <div class="row">
+                    <h1> OTAKAR AGENCY </h1>
+
+                </div>
+            </div>
+
+        </div> 
+
+    </footer>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
+

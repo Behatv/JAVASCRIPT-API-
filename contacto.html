@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> CONTACTO </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+<body  class="body" background="imagenes/fondo celeste.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row"> 
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <a class="navbar-brand" href="#"><img src="imagenes/logo-removebg-preview.png" alt="Logo"></a>
+    
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- menu de navegación -->
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="inicio.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">LOGIN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="nosotros.html">NOSOTROS</a>
+                                </li>
+                            </ul>
+    
+                            <!-- buscador  -->
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                                <button class="btn btn-outline-success configuracion_boton boton_click_js" type="submit" 
+                                    style="--bs-btn-color: #003366; --bs-btn-border-color: #003366; --bs-btn-hover-color: #fff; --bs-btn-hover-bg: #003366; --bs-btn-hover-border-color: #003366; --bs-btn-focus-shadow-rgb: 0, 51, 102; --bs-btn-active-color: #fff; --bs-btn-active-bg: #003366; --bs-btn-active-border-color: #003366; --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); --bs-btn-disabled-color: #003366; --bs-btn-disabled-bg: transparent; --bs-btn-disabled-border-color: #003366; --bs-gradient: none;">
+                                    Buscar
+                                </button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal LOGIN -->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">INICIAR SESIÓN</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+  
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Correo Electronico</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Contraseña</label>
+                            </div>
+    
+                            <div class="form-check text-start my-3">
+                                <input class="form-check-input" type="checkbox" value="remember-me" id="checkDefault">
+                                <label class="form-check-label" for="checkDefault">
+                                    Recordar
+                                </label>
+                            </div>
+                            <button class="btn btn-primary w-100 py-2" type="submit">Iniciar Sesion</button>
+                        </form>
+                    </div>
+                    
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row"> 
+                <div class="col"> 
+                    <div id="carouselExampleIndicators" class="carousel slide" >
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagenes/contactos_carrusel_paisaje1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/contactos_carrusel_paisaje2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/contactos_carrusel_paisaje3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="titulo_formulario" >
+            <div class="container-md">
+                <div class="row">
+                    <div class="column">
+                        <h1 id="watchme">FORMULARIO DE CONTACTO </h1>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        
+        <div id="fondo_general">
+            <div class="formulario_configuracion ">
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col">
+                            <form class="formulario_Contacto_js">
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="nombre" required>
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" name="apellido" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="number" class="form-control" placeholder="Numero de Telefono" aria-label="Telefono" name="telefono" required>
+                                    </div>
+                                </div>
+                          
+                                <div class="mb-3">
+                                  <label for="correo_electronico" class="form-label">Correo Electronico:</label>
+                                  <input type="email" class="form-control" id="correo_electronico" aria-describedby="email_ayuda" name="correo_electronico" required>
+                                  <div id="email_ayuda" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                                </div>
+            
+            
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario" aria-describedby="Usuario_ingresar" name="usuario" required>
+                                </div>                                                                       
+                                  <div class="input-group">
+                                    <select class="form-select" id="elegir_opcion" name="elegir_op" aria-label="Ejemplo de seleccionar y confirmar" required>
+                                        <option value="">Elegir...</option>
+                                        <option value="1">Quiero cotizar un viaje</option>
+                                        <option value="2">Necesito más información</option>
+                                        <option value="3">Deseo reservar ahora</option>
+                                    </select>
+            
+                                    <button class="btn btn-outline-secondary" type="button">Confirmar</button>
+                                  </div>
+                                <div class="sexo_tamaño">
+                                    <div class="mb-3">
+                                        <label for="tipo_sexo" class="form-label">Sexo:</label>
+                                    </div>
+        
+                                </div>
+            
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="masculino">
+                                    <label class="form-check-label" for="masculino">
+                                    Masculino
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="femenino">
+                                    <label class="form-check-label" for="femenino">
+                                    Femenino
+                                    </label>
+            
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="otro">
+                                    <label class="form-check-label" for="otro">
+                                      Otro
+                                    </label>                     
+                                  </div>
+                                  <div class="input-group">
+                                    <span class="input-group-text"> Comentario: </span>
+                                    <textarea class="form-control" aria-label="area de texto"></textarea>
+                                  </div>
+            
+                                  <div class="input-group">
+                                    <input type="file" class="form-control" id="agregar_archivo" aria-describedby="agregar archivo" aria-label="agregar un archivo">
+                                    <button class="btn btn-outline-secondary" type="button" id="confirmar_archivo">Confirmar</button>
+                                    
+                                  </div> <br>
+                                  
+    
+                                   <div class="boton_enviar">
+    
+                                    <button type="submit" class="btn btn-primary boton_click_contacto_js"> Enviar</button>
+                                    
+                                   </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+    
+        </div> <br>
+        
+        <div class="container-xl">
+            <div class="row">
+                <div class="col">
+                    <canvas id="canvas" width="1000" height="600"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <a class="top-link hide" href="" id="js-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+        <span class="screen-reader-text">Volver hacia arriba</span></a>
+
+    </main>
+
+         
+    <footer>
+        <div class="container-fluid">
+            <div class="barra_redes_nueva">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h1> ✈🌍 INFORMACION   </h1>
+                        <ul class="list-group list-group-flush"> <!-- grupo de listas--> 
+                            <li class="list-group-item"><a href="https://www.facebook.com" target="_blank">SOBRE NOSOTROS</a></li>
+                            <li class="list-group-item"><a href="https://www.whatsapp.com/" target="_blank">PREGUNTAS FRECUENTES (FAQ)</a></li>
+                            <li class="list-group-item"><a href="https://www.instagram.com" target="_blank">TESTIMONIOS</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <h1> ✈🌍 SERVICIOS </h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="https://www.facebook.com" target="_blank">DESTINOS</a></li>
+                            <li class="list-group-item"><a href="https://www.whatsapp.com/" target="_blank">PAQUETES Y OFERTAS</a></li>
+                            <li class="list-group-item"><a href="https://www.instagram.com" target="_blank">RESERVAS</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-2">
+                        <div class="logo_redes1">
+                            <ul >
+                                <li ><a href="https://www.facebook.com" target="_blank"><img src="imagenes/logo_facebook-removebg-preview.png" alt="Facebook"></a></li>
+                                <li ><a href="https://www.whatsapp.com" target="_blank"><img src="imagenes/logoWSP-removebg-preview.png" alt="WhatsApp"></a></li>
+                                <li ><a href="https://www.instagram.com" target="_blank"><img src="imagenes/insta_logo-removebg-preview.png" alt="Instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="nombre_empresa_abajo">
+                <div class="row">
+                    <h1> OTAKAR AGENCY </h1>
+
+                </div>
+            </div>
+
+        </div> 
+
+    </footer>
+
+    <script src="contacto.js"></script>
+
+
+</body>
+</html>
+
+

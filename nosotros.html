@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> NOSOTROS </title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body  class="body" background="imagenes/fondo celeste.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <header>
+      <div class="container-fluid">
+          <div class="row"> 
+              <div class="col-12">
+                  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                      <a class="navbar-brand" href="#"><img src="imagenes/logo-removebg-preview.png" alt="Logo"></a>
+  
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+  
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <!-- menu de navegación -->
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                  <a class="nav-link active" href="inicio.html">INICIO</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">LOGIN</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link active" href="nosotros.html">NOSOTROS</a>
+                              </li>
+                          </ul>
+  
+                          <!-- buscador  -->
+                          <form class="d-flex" role="search">
+                              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                              <button class="btn btn-outline-success configuracion_boton" type="submit" 
+                                  style="--bs-btn-color: #003366; --bs-btn-border-color: #003366; --bs-btn-hover-color: #fff; --bs-btn-hover-bg: #003366; --bs-btn-hover-border-color: #003366; --bs-btn-focus-shadow-rgb: 0, 51, 102; --bs-btn-active-color: #fff; --bs-btn-active-bg: #003366; --bs-btn-active-border-color: #003366; --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); --bs-btn-disabled-color: #003366; --bs-btn-disabled-bg: transparent; --bs-btn-disabled-border-color: #003366; --bs-gradient: none;">
+                                  Buscar
+                              </button>
+                          </form>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Modal LOGIN -->
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">INICIAR SESIÓN</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+
+                          <div class="form-floating">
+                              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                              <label for="floatingInput">Correo Electronico</label>
+                          </div>
+                          <div class="form-floating">
+                              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                              <label for="floatingPassword">Contraseña</label>
+                          </div>
+  
+                          <div class="form-check text-start my-3">
+                              <input class="form-check-input" type="checkbox" value="remember-me" id="checkDefault">
+                              <label class="form-check-label" for="checkDefault">
+                                  Recordar
+                              </label>
+                          </div>
+                          <button class="btn btn-primary w-100 py-2" type="submit">Iniciar Sesion</button>
+                      </form>
+                  </div>
+                  
+                  <div class="modal-footer">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  
+
+    <main>
+        <div class="container-sm">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner ">
+                  <div class="carousel-item active resaltar_elemento_js">
+                    <img src="imagenes/carrusel 3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item resaltar_elemento_js">
+                    <img src="imagenes/carrusel 1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item resaltar_elemento_js">
+                    <img src="imagenes/carrusel 2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="card_nosotros_2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="clearfix  ">
+                            <img src="imagenes/aaaaaaaaaaaaaa.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 " alt="...">
+                            <p>
+                                En Otakar Agency, creemos que viajar es mucho más que trasladarse de un lugar a otro; es vivir experiencias que marcan la vida, crean recuerdos y transforman nuestra forma de ver el mundo. Nuestra identidad está forjada en la pasión por descubrir y en el firme compromiso de acompañar a cada viajero en su sueño de explorar nuevos destinos. Nos mueve la convicción de que cada viaje debe ser único y reflejar los deseos y necesidades de quienes confían en nosotros. Nuestra misión es acercarte a esos rincones del planeta que siempre has querido conocer, brindándote un servicio de calidad, confiable y personalizado.                          
+                            <p>
+                                Visualizamos un futuro donde más personas puedan enriquecer su vida a través de la aventura, la cultura y el descubrimiento. Basamos nuestro trabajo en valores sólidos: compromiso con nuestros clientes, honestidad en cada proceso, excelencia en el servicio, innovación constante y profundo respeto por la diversidad cultural.                            </p>
+                          
+                            <p>
+                                Somos un equipo que cree en el poder de los sueños y que trabaja día a día para hacerlos realidad. Porque en Otakar Agency, tu próximo viaje no es solo un destino, es el inicio de una historia inolvidable.                                 </p>
+                          </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="personas_presentacion">
+                        <div>
+                            <img src="imagenes/personas1.jpg" > <br>
+                            <p> James Anderson Clark</p>
+                        </div>
+                        <div>
+                            <img src="imagenes/personas22.webp" ><br>
+                            <p> Emily Taylor Morgan</p>
+                        </div>
+                        <div>
+                            <img src="imagenes/personas3.jpg" ><br>
+                            <p> Daniel Roberts Hughes</p>
+                        </div>
+                        <div>
+                            <img src="imagenes/personas4.jpg" > <br>
+                            <p> Olivia Bennett Foster</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> <br><br>
+        
+        <div class="card_nosotros_2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="clearfix">
+                            <img src="imagenes/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa2.jpg" class="col-md-4 float-md-start mb-3 me-md-3" alt="...">                           
+                            <p>
+                                En Otakar Agency, entendemos que cada viaje es una oportunidad para descubrir nuevas perspectivas, conectar con culturas y vivir momentos que quedan grabados para siempre. Nuestra identidad se basa en la pasión por el turismo y el compromiso de ofrecer experiencias que superen las expectativas de quienes eligen viajar con nosotros. Nos impulsa el deseo de hacer de cada trayecto una vivencia única, adaptada a los sueños y necesidades de nuestros viajeros.                            </p>
+                          
+                            <p>
+                                Nuestra misión es brindarte acceso a destinos fascinantes, garantizando un servicio cercano, profesional y personalizado que te acompañe en cada paso del camino. Visualizamos un mundo en el que cada persona pueda explorar el planeta con confianza, seguridad y la certeza de que cada viaje será una aventura memorable.                            </p>
+                          
+                            <p>
+                                Los valores que nos guían son la dedicación, la honestidad, la excelencia en el servicio y el respeto por la diversidad, siempre buscando innovar y mejorar en cada proyecto. En Otakar Agency, somos un equipo que cree en el poder de los viajes para transformar vidas y, por ello, trabajamos con pasión para hacer realidad cada experiencia.                            </p>
+                          </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tabla_destinos2">
+            <div class="container-lg"> <!--tabla que va a tener los paises con sus ciudades mas visitadas y dentro de eso va a tener otras recomendaciones -->
+                <div class="row">
+                    <div class="col">
+                        <div class="tabla_destinos">
+                            <table class="table table-striped-columns" border="4">
+                                <thead>
+                                  <tr class="fila1">
+                                    <th scope="col">País</th>
+                                    <th scope="col">Ciudad Principal</th>
+                                    <th scope="col">Atracción Destacada</th>
+                                    <th scope="col">Precio Desde</th>
+                                    <th scope="col">Otras ciudades</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Francia</th>
+                                    <td>	París</td>
+                                    <td>Torre Eiffel</td>
+                                    <td>USD 1.200</td>
+                                    <td>
+    
+                                        <div class="boton_enviar1">
+                                            <button type="button" class="btn btn-outline-primary mi-boton" data-bs-toggle="modal" data-bs-target="#modalFrancia">
+                                              Ver más
+                                            </button>
+                                          </div>
+                                          
+                                          <!-- Modal Francia -->
+                                          <div class="modal fade" id="modalFrancia" tabindex="-1" aria-labelledby="modalFranciaLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                <div class="titulo_vermas">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="modalFranciaLabel"><h2>Francia</h2></h1>
+                                                      </div>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <h4>Niza</h4>
+    
+                                                    <p>Atracción: Paseo de los Ingleses (Promenade des Anglais), un hermoso paseo marítimo a orillas del Mediterráneo, perfecto para caminar, andar en bicicleta y disfrutar de la playa.</p>
+                                                    
+                                                    <h4> Estrasburgo</h4>
+                                                    <p>Atracción: Catedral de Notre-Dame de Estrasburgo, una impresionante catedral gótica considerada una de las más bellas de Europa, con su famoso reloj astronómico.
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Japón</th>
+                                    <td>Tokio</td>
+                                    <td>	Templo Sensoji</td>
+                                    <td>USD 1.800</td>
+                                    <td>                                    <!-- Button trigger modal -->
+                                        <div class="boton_enviar1">
+                                            <button type="button" class="btn btn-outline-primary mi-boton" data-bs-toggle="modal" data-bs-target="#modalJapon">
+                                                Ver mas
+                                            </button>
+                                          </div>
+                                          
+                                          <!-- Modal Japón -->
+                                          <div class="modal fade" id="modalJapon" tabindex="-1" aria-labelledby="modalJaponLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                <div class="titulo_vermas">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="modalFranciaLabel"><h2>Japon</h2></h1>
+                                                      </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h4>Kioto</h4>
+    
+                                                    <p>Atracción: Templo Fushimi Inari-taisha, famoso por sus miles de puertas torii rojas que forman caminos mágicos a través del bosque..</p>
+                                                    
+                                                    <h4> Osaka</h4>
+                                                    <p>Atracción: Castillo de Osaka, uno de los castillos más emblemáticos de Japón, rodeado de hermosos jardines y con una historia fascinante.
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Italia</th>
+                                    <td>Roma</td>
+                                    <td>Coliseo Romano</td>
+                                    <td>	USD 1.300</td>
+                                    <td>                                    <!-- Button trigger modal -->
+                                        <div class="boton_enviar1">
+                                            <button type="button" class="btn btn-outline-primary mi-boton" data-bs-toggle="modal" data-bs-target="#modalItalia">
+                                            Ver mas
+                                            </button>
+                                          </div>
+                                          
+                                          <!-- Modal Italia -->
+                                          <div class="modal fade" id="modalItalia" tabindex="-1" aria-labelledby="modalItaliaLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                
+                                                <div class="titulo_vermas">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="modalFranciaLabel"><h2>Italia</h2></h1>
+                                                      </div>
+                                                </div>
+                                                
+                                                <div class="modal-body">
+                                                  <h4>Florencia</h4>
+                                                  <p>Atracción: Catedral de Santa María del Fiore, famosa por su enorme cúpula diseñada por Brunelleschi, símbolo del Renacimiento italiano.</p>
+                                                  
+                                                  <h4>Venecia</h4>
+                                                  <p>Atracción: Plaza de San Marcos y el Gran Canal, donde puedes pasear en góndola y disfrutar de la arquitectura histórica.</p>
+                                                </div>
+                                                
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                </div>
+                                          
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="container-fluid card_de_abajo1 d-flex gap-3">
+            <div class="card" style="width: 25rem;">
+                <div class="imagen_card1 resaltar_elemento_js">
+                    <img src="imagenes/corea del sur.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">✈️ Corea del Sur</h5>
+                    <p class="card-text">Viaja a Corea del Sur con nosotros y disfruta de itinerarios personalizados que te llevan desde la vibrante Seúl hasta la belleza natural de Jeju. Nuestros guías expertos te acompañarán en cada paso, ofreciéndote una experiencia única. Con nuestro servicio de atención al cliente 24/7, podrás viajar con total tranquilidad. 🌎✨</p>
+                    <a href="#" class="btn btn-primary mi_boton2">¡Viaja ya!</a>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <div class="imagen_card1 resaltar_elemento_js">
+                    <img src="imagenes/islandia.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">✈️ Islandia</h5>
+                  <p class="card-text">Descubre la magia de Islandia con nosotros. Te ofrecemos rutas exclusivas a los paisajes más impresionantes, como la Laguna Azul y las cascadas del Círculo Dorado. Además, nos encargamos de todos los detalles para que solo te preocupes por disfrutar de la naturaleza. ¡Vive experiencias únicas como avistar auroras boreales! 🌎✨</p>
+                  <a href="#" class="btn btn-primary mi_boton2">¡Viaja ya!</a>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <div class="imagen_card1 resaltar_elemento_js">
+                    <img src="imagenes/china.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">✈️ China</h5>
+                  <p class="card-text">Descubre la rica historia de China, desde la majestuosa Gran Muralla hasta la Ciudad Prohibida. Te ofrecemos itinerarios exclusivos a lugares emblemáticos como Xi'an y Beijing. Nos encargamos de todo el recorrido para que solo te preocupes por disfrutar de cada detalle. ¡Vive una experiencia inolvidable en China! 🌎✨</p>
+                  <a href="#" class="btn btn-primary mi_boton2">¡Viaja ya!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="beneficios">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 40rem;">
+                            <div class="imagen_card2">
+                                <img src="imagenes/flores rosadas.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">BENEFICIOS</h5>
+                              <p class="card-text"><p> <span class="negrita">Viajes personalizados:<br></span> Adaptamos tu experiencia a tus gustos y necesidades.</p>
+                              <p> <span class="negrita">Atención constante:</span> <br> Estamos contigo en cada etapa de tu viaje.</p>
+                              <p> <span class="negrita">Confianza y calidad: <br></span> Trabajamos con los mejores proveedores para ofrecerte lo mejor.</p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+    
+    <footer>
+        <div class="container-fluid">
+            <div class="barra_redes_nueva">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h1> ✈ INFORMACION </h1>
+                        <ul class="list-group list-group-flush"> <!-- grupo de listas--> 
+                            <li class="list-group-item"><a href="https://www.facebook.com" target="_blank">SOBRE NOSOTROS</a></li>
+                            <li class="list-group-item"><a href="https://www.whatsapp.com/" target="_blank">PREGUNTAS FRECUENTES</a></li>
+                            <li class="list-group-item"><a href="https://www.instagram.com" target="_blank">TESTIMONIOS</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <h1>  ✈SERVICIOS  </h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="https://www.facebook.com" target="_blank">DESTINOS</a></li>
+                            <li class="list-group-item"><a href="https://www.whatsapp.com/" target="_blank">PAQUETES Y OFERTAS</a></li>
+                            <li class="list-group-item"><a href="https://www.instagram.com" target="_blank">RESERVAS</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-1">
+                        <div class="logo_redes1">                        
+                            <ul >                
+                                <li ><a href="https://www.facebook.com" target="_blank"><img src="imagenes/logo_facebook-removebg-preview.png" alt="Facebook"></a></li>
+                                <li ><a href="https://www.whatsapp.com" target="_blank"><img src="imagenes/logoWSP-removebg-preview.png" alt="WhatsApp"></a></li>
+                                <li ><a href="https://www.instagram.com" target="_blank"><img src="imagenes/insta_logo-removebg-preview.png" alt="Instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h1>  ✈ CONTACTANOS  </h1>
+                        <form class="formulario_Nosotros_js">
+                            <label for="correo_electronico" class="form-label">Correo Electronico:</label>
+                            <input name="correo_electronico" type="email" class="form-control " id="correo_electronico" aria-describedby="email_ayuda"> 
+                            <div class="div_tecla_js"> </div>
+                            <button type="submit" class="btn btn-primary mi_boton3">Enviar</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="nombre_empresa_abajo">
+                <div class="row">
+                    <h1> OTAKAR AGENCY </h1>
+
+                </div>
+            </div>
+
+        </div> 
+
+    </footer>
+    
+    <script src="nosotros.js"></script>
+
+</body>
+</html>
