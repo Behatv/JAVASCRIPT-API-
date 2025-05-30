@@ -30,8 +30,6 @@ window.onload = () => {
                 📍  <strong>Ubicación:</strong> ${lat.toFixed(2)}, ${lon.toFixed(2)}<br> 
                 🛬 <strong>Altitud:</strong> ${altitud.toFixed(0)}
                     <strong>Lugar:</strong> ${enTierra_o_enVuelo}
-
-
               `);
           }
         });
