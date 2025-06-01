@@ -1,5 +1,5 @@
 window.onload = () => {
-  const map = L.map('map').setView([20, 0], 2); // Vista global
+  const map = L.map('map').setView([20, 0], 2) ; // Vista global
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
@@ -19,8 +19,8 @@ window.onload = () => {
           const altitud = vuelo[7];
           const enTierra_o_enVuelo = vuelo[8];
 
-          // Mostrar solo si está en Sudamérica
-          if (lat && lon && lat > -60 && lat < 20 && lon > -90 && lon < -30) {
+          // Mostrar America
+          if (lat > -60 && lat < 70 && lon > -170 && lon < -30) {
             console.log(`Nombre: ${nombre}, Lat: ${lat}, Lon: ${lon}, Altitud: ${altitud} m`);
 
             L.marker([lat, lon])
@@ -48,5 +48,5 @@ window.onload = () => {
       if (layer instanceof L.Marker) map.removeLayer(layer);
     });
     cargarVuelos();
-  }, 60000);
+  }, 50000);
 };

@@ -2,10 +2,6 @@ window.onload = () => {
   const infoUbicacion = document.getElementById("infoUbicacion");
   const mapaContenedor = document.getElementById("mapaContenedor");
 
-  if (!infoUbicacion || !mapaContenedor) {
-    console.error("Faltan elementos en el HTML con id 'infoUbicacion' o 'mapaContenedor'");
-    return;
-  }
 
   fetch("https://api.geoapify.com/v1/ipinfo?apiKey=4de04ea914184d1380005995b6c9aac8")
     .then(response => {
@@ -21,13 +17,14 @@ window.onload = () => {
       const region = data.state;
       const locacion = data.location;
 
-     infoUbicacion.innerHTML = `
-        <li class="list-group-item text-white bg-rojo"><strong>País:</strong> ${pais?.name || "N/A"}</li>
-        <li class="list-group-item  text-white bg-verde"><strong>Ciudad:</strong> ${ciudad?.name || "N/A"}</li>
-        <li class="list-group-item text-white bg-amarillo"><strong>Región:</strong> ${region?.name || "N/A"}</li>
-        <li class="list-group-item  text-white bg-azul-claro"><strong>Latitud:</strong> ${locacion?.latitude}</li>
-        <li class="list-group-item  text-white bg-gris "><strong>Longitud:</strong> ${locacion?.longitude}</li>
-      `; 
+      infoUbicacion.innerHTML = `
+         <li class="list-group-item text-white bg-rojo"><strong>País:</strong> ${pais?.name || "N/A"}</li>
+         <li class="list-group-item  text-white bg-verde"><strong>Ciudad:</strong> ${ciudad?.name.replace("Ã³", "ó")
+ || "N/A"}</li>
+         <li class="list-group-item text-white bg-amarillo"><strong>Región:</strong> ${region?.name || "N/A"}</li>
+         <li class="list-group-item  text-white bg-azul-claro"><strong>Latitud:</strong> ${locacion?.latitude}</li>
+         <li class="list-group-item  text-white bg-gris "><strong>Longitud:</strong> ${locacion?.longitude}</li>
+       `; 
 
       const mapa = L.map(mapaContenedor).setView([locacion.latitude, locacion.longitude], 13);
 
