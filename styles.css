@@ -632,3 +632,38 @@ button {
     font-size: 40px;
     margin-top: 20px;
 }
+
+
+.atracciones_turisticas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    border: #000000 2px solid;
+    background-color: #f3dced;
+}
+
+.titulo_atractivo {
+    text-align: center;
+    color: #003366;
+    font-size: 30px;
+    margin-top: 20px;
+}
+#cargarAtractivos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.atractivos_contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+}
