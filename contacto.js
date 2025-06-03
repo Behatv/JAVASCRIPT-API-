@@ -125,7 +125,7 @@ function draw() {
 //sadasdasdas
 
 
-
+// formulario movimiento
 //.......................................................................................
 //https://developer.mozilla.org/es/docs/Web/CSS/CSS_animations/Using_CSS_animations
 var e = document.getElementById("watchme");
@@ -151,6 +151,8 @@ function listener(e) {
   document.getElementById("output").appendChild(l);
 }
 
+
+// volver hacia arriba
 //https://wpengine.com/resources/sticky-back-to-top-button-tutorial/
 
 const scrollFunc = () => {

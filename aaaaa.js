@@ -1,16 +1,21 @@
-window.onload = () => {
-  const infoUbicacion = document.getElementById("infoUbicacion");
-  const mapaContenedor = document.getElementById("mapaContenedor");
+
+  const botones = document.querySelectorAll(".boton_click_js");
+
+botones.forEach((botones) => { // foreach para recorrer cada boton
+    botones.addEventListener('click', (evento) => {
+        evento.preventDefault();
+        console.log("se hizo click en el boton");
+    });
+});
 
 
-  fetch("https://api.geoapify.com/v1/ipinfo?apiKey=4de04ea914184d1380005995b6c9aac8")
+
+  fetch("https://api.geoapify.com/v2/places?categories=commercial.supermarket&filter=rect%3A10.716463143326969%2C48.755151258420966%2C10.835314015356737%2C48.680903341613316&limit=20&apiKey=bff140f9e4f442e8bb35fe1f1e25b20f")
     .then(response => {
       if (!response.ok) throw new Error("No se pudo obtener la ubicación");
       return response.json();
     })
     .then(data => {
-
-      console.log("Datos obtenidos:", data);
       
       const pais = data.country;
       const ciudad = data.city;
@@ -42,4 +47,4 @@ window.onload = () => {
       console.error("Error al obtener la ubicación:", error);
       infoUbicacion.innerHTML = `<li class="list-group-item text-danger">No se pudo obtener la ubicación</li>`;
     });
-};
+
